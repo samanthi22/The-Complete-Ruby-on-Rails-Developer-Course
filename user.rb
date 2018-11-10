@@ -11,11 +11,18 @@ class User
     def get_name
         @name
     end
+    
+    def set_name=(name)
+        @name = name
+    end
 end
 
 user = User.new("Samanthi")
 user1 = User.new("John")
 user2 = User.new("Kevin")
+puts user.get_name
+user.set_name= "John"
+puts user.get_name
 
 # puts User.ancestors
 =begin
