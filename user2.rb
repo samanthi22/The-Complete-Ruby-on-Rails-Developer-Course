@@ -13,7 +13,10 @@ end
 
 # < sub-class
 class Buyer < User
-    
+    # inheritance
+    def run
+        puts "Hey I'm not running and I'm in buyer class"
+    end
 end
 
 class Seller < User
@@ -33,3 +36,7 @@ puts "My user's new name is #{user.name} and his email is #{user.email}"
 
 buyer1 = Buyer.new("John Doe", "johndoe@example.com")
 buyer1.run
+seller1 = Seller.new("John Doe1", "johndoe1@example.com")
+seller1.run
+admin1 = Admin.new("John Doe2", "johndoe2@example.com")
+admin1.run
