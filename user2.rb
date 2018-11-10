@@ -9,6 +9,10 @@ class User
     def run
         puts "Hey I'm running"
     end
+    
+    def self.identify_yourself
+        puts "Hey I am a class method"
+    end
 end
 
 # < sub-class
@@ -40,3 +44,20 @@ seller1 = Seller.new("John Doe1", "johndoe1@example.com")
 seller1.run
 admin1 = Admin.new("John Doe2", "johndoe2@example.com")
 admin1.run
+puts Buyer.ancestors
+
+User.identify_yourself
+=begin
+My user's name is Samanthi and her email is sjinadasa@fas.harvard.edu
+John
+My user's new name is John and his email is john@example.com
+Hey I'm not running and I'm in buyer class
+Hey I'm running
+Hey I'm running
+Buyer
+User
+Object
+Kernel
+BasicObject
+Hey I am a class method
+=end
