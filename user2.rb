@@ -1,5 +1,12 @@
-class User
+module Destructable
+    def destroy(anyobject)
+       puts "I will destroy the object" 
+    end
+end
 
+class User
+    include Destructable
+    
     attr_accessor :name, :email
     def initialize(name, email)
         @name = name
@@ -61,3 +68,8 @@ Kernel
 BasicObject
 Hey I am a class method
 =end
+
+user = User.new("jinadasa", "sjinadasa@fas.harvard.edu")
+# user2.rb:72:in `<main>': undefined method `destroy' for #<User:0x000000020a03c8> (NoMethodError)
+# this method is not accessible by user
+user.destroy("myname")
