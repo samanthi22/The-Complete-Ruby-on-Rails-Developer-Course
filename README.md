@@ -1,6 +1,6 @@
 Ruby on Rails - 
-Saturdays @WeWork 
-11am-4pm.
+Tuesday - Twice a Month 
+6:30pm - 9pm.
 
 Happy coding!
 
